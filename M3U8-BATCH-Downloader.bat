@@ -24,6 +24,10 @@ if "%mode%"=="1" (
     echo 選項無效，請重新執行腳本。
 )
 
+REM 清除畫面並告知下載完成的檔案
+cls
+echo 下載完成！檔案已儲存至: "%output_dir%\%file_name%"
+
 set /p asd="按下 Enter 繼續"
 
 REM 如果要自動關機，取消下面的註解
