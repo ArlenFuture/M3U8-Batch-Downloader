@@ -6,10 +6,14 @@ set "base_url=https://example.com/path/to/m3u8-file"
 set "output_dir=.\下載資料夾"
 set "file_name=【來源】範例影片[集數][720P].mp4"
 
+REM 選項，避免錯誤
+set "option1=一般下載"
+set "option2=處理需要協議白名單的 M3U8 播放清單"
+
 REM 提供下載選項
 echo 選擇要下載的模式:
-echo [1] - 一般下載
-echo [2] - 處理需要協議白名單的 M3U8 播放清單
+echo [1] - %option1%
+echo [2] - %option2%
 set /p mode="請輸入選項編號並按 Enter: "
 
 if "%mode%"=="1" (
